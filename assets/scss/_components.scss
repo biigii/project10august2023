@@ -2,24 +2,28 @@
   width: 700px;
   height: 700px;
   border: 3px dashed;
-  // background: red;
-  // background-image: url('./assets/image/photo.jpg');
-  background-image: url("https://picsum.photos/id/1050/300/600");
-  background-repeat: no-repeat;
-  // background-repeat: repeat-y;
-  // background-position: 100px 100px;
-  // background-position: 50% 50%;
-  // background-position: 100% 100%;
-  // background-position: center center;
-  // background-position: center;
-  // background-size: cover;
+  // background: radial-gradient();
+  // background: linear-gradient();
+  // background: conic-gradient();
+  // background: linear-gradient(red, black);
+  // // background: linear-gradient(#f11, #000, #fff, #f0f, #ff0);
+  // background: linear-gradient(#f22 50%, #ff0 50%);
+  // background: linear-gradient(red, red 20%, black 20%, black 50%, blue 50%, blue 80%, yellow 80%, yellow 100%);
+  // background: linear-gradient(to top, red, blue);
+  // background: linear-gradient(to left, red, blue);
+  // background: linear-gradient(to top left, red, blue);
+  // background: linear-gradient(135deg, red, blue);
+  // background: radial-gradient(red, black);
+  // background: radial-gradient(yellow 50%, green 50%);
+  background: conic-gradient(red 20%,yellow 20%, blue 50%);
 }
 
 body {
-  background-image: url("https://picsum.photos/id/1055/2560/1440");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 100vh;
+  // background-color: #fff;
+	// background-image: linear-gradient(-45deg, transparent 75%, #000 75%),
+	// 	linear-gradient(45deg, transparent 75%, #000 75%),
+	// 	linear-gradient(135deg, transparent 75%, #000 75%),
+	// 	linear-gradient(-135deg, transparent 75%, #000 75%);
+	// background-size: 20px 20px;
+  background-image: repeating-linear-gradient(45deg, hsl(64,83%,66%) 0px, hsl(64,83%,66%) 6px,hsl(109,83%,66%) 6px, hsl(109,83%,66%) 12px,hsl(154,83%,66%) 12px, hsl(154,83%,66%) 18px,hsl(199,83%,66%) 18px, hsl(199,83%,66%) 24px,hsl(244,83%,66%) 24px, hsl(244,83%,66%) 30px,hsl(289,83%,66%) 30px, hsl(289,83%,66%) 36px,hsl(334,83%,66%) 36px, hsl(334,83%,66%) 42px,hsl(19,83%,66%) 42px, hsl(19,83%,66%) 48px);
 }
