@@ -1,54 +1,98 @@
-// .fruits {
-//   margin-left: 200px;
-//   // list-style: none;
-//   // list-style-type: none;
-//   li {
-//     // list-style: none;
-//     font-size: 2em;
-//     list-style-type: disc;
-//     list-style-position: inside;
-//     &::marker {
-//       color: red;
-//     }
-//   }
-// }
-
-// :first-child
-// :last-child
-// :first-of-type
-// :nth-child()
-
-ul.fruits {
-  li {
-    font-size: 2em;
-    list-style-position: inside;
-  }
-  // get the li which is the first child of its parent
-  li:first-child {
-    color: red;
-  }
-
-  li:nth-child(3) {
-    text-decoration: underline;
-  }
-
-  li:last-child {
-    // one way to get rid of marker is display inline block
-    // display: inline-block;
-    background-color: lightblue;
+section {
+  width: 400px;
+  height: 300px;
+  margin: 50px;
+  border: 2px solid;
+  border: {
+    width: 2px;
+    style: solid;
+    radius: 30px;
   }
 }
 
-section {
-  p:first-of-type {
-    color: red;
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+  font-size: 4em;
+  margin: 20px;
+  // transition: background-color 1s;
+  // transition-timing-function: ease-in-out;
+}
+
+// .box:hover {
+//   background-color: #f11;
+// }
+
+.box {
+  animation-name: somename;
+  // animation-play-state: paused;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  // animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  // animation-delay: 1s;
+}
+
+@keyframes somename {
+  50% {
+    background-color: #f11;
   }
 
-  p:nth-of-type(2) {
-    text-decoration: line-through;
+  70% {
+    border-radius: 50%;
   }
 
-  p:last-of-type {
-    color: green
+  100% {
+    rotate: 360deg;
+  }
+}
+
+// @keyframes somename {
+//   from {
+//     border-radius: 0;
+//   }
+
+//   to {
+//     border-radius: 50%;
+//   }
+// }
+
+// @keyframes somename {
+//   to {
+//     background-color: #f11;
+//     scale: 2;
+//     rotate: 360deg
+//   }
+// }
+
+button {
+  width: 300px;
+  height: 80px;
+  background-color: #f11;
+  color: #fff;
+  font-size: 3em;
+  animation-duration: 100ms;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+button:hover {
+  animation-name: shake;
+}
+
+@keyframes shake {
+  from {
+    scale: 0.95;
+    // transform: skew(-1deg, -1deg);
+  }
+  to {
+    scale: 1.05;
+    // transform: skew(1deg, 1deg);
   }
 }
