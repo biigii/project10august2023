@@ -1,0 +1,54 @@
+// .fruits {
+//   margin-left: 200px;
+//   // list-style: none;
+//   // list-style-type: none;
+//   li {
+//     // list-style: none;
+//     font-size: 2em;
+//     list-style-type: disc;
+//     list-style-position: inside;
+//     &::marker {
+//       color: red;
+//     }
+//   }
+// }
+
+// :first-child
+// :last-child
+// :first-of-type
+// :nth-child()
+
+ul.fruits {
+  li {
+    font-size: 2em;
+    list-style-position: inside;
+  }
+  // get the li which is the first child of its parent
+  li:first-child {
+    color: red;
+  }
+
+  li:nth-child(3) {
+    text-decoration: underline;
+  }
+
+  li:last-child {
+    // one way to get rid of marker is display inline block
+    // display: inline-block;
+    background-color: lightblue;
+  }
+}
+
+section {
+  p:first-of-type {
+    color: red;
+  }
+
+  p:nth-of-type(2) {
+    text-decoration: line-through;
+  }
+
+  p:last-of-type {
+    color: green
+  }
+}
